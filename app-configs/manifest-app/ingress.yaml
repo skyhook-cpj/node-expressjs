@@ -9,5 +9,5 @@ spec:
         paths:
           - backend:
               serviceName: node-expressjs-sample
-              servicePort: 8080
+              servicePort: 3000
             path: /
