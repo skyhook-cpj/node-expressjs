@@ -1,10 +1,10 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: spring-boot-route
+  name: node-expressjs-sample
 spec:
   rules:
-    - host: www.c5a194a8ee10044eba673c20eb3367691.cn-beijing.alicontainer.com
+    - host: www.c5a194a8ee10044eba673c20eb3367611.cn-beijing.alicontainer.com
       http:
         paths:
           - backend:
