@@ -49,6 +49,9 @@ health_check() {
     echo "check ${HEALTH_CHECK_URL} success"
 }
 start_application() {
+    echo "node environment"
+    node --version
+    npm --version
     echo "starting nodejs process"
     nohup npm start > ${STD_OUT} 2>&1 &
     echo "started nodejs process"
