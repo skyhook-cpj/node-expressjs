@@ -55,7 +55,7 @@ start_application() {
 }
 
 stop_application() {
-   checkjavapid=`ps -ef | grep java | grep ${NODE_MAIN} | grep -v grep | awk '{print$2}'`
+   checkjavapid=`ps -ef | grep node | grep ${NODE_MAIN} | grep -v grep | awk '{print$2}'`
    
    if [[ ! $checkjavapid ]];then
       echo -e "\rno nodejs process"
@@ -68,7 +68,7 @@ stop_application() {
    do
         sleep 1
         COSTTIME=$(($times - $e ))
-        checkjavapid=`ps -ef | grep java | grep ${NODE_MAIN} | grep -v grep | awk '{print$2}'`
+        checkjavapid=`ps -ef | grep node | grep ${NODE_MAIN} | grep -v grep | awk '{print$2}'`
         if [[ $checkjavapid ]];then
             kill -9 $checkjavapid
             echo -e  "\r        -- stopping node lasts `expr $COSTTIME` seconds."
