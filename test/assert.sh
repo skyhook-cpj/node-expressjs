@@ -1,4 +1,5 @@
 # /bin/sh
+# usage export REQUIRED_NODE_VERSION=v14.8.1 && ./test/assert.sh
 REQUIRED_NODE_VERSION=${REQUIRED_NODE_VERSION:-unknow}
 echo "校验版本 $REQUIRED_NODE_VERSION"
 CURRENT_NODE_VERSION=$(node --version)
